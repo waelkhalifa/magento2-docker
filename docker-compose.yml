@@ -25,7 +25,7 @@ services:
       - appdata:/var/www/html
       - sockdata:/sock
       - ssldata:/etc/nginx/certs
-    #extra_hosts: &appextrahosts
+      #extra_hosts: &appextrahosts
       ## Selenium support, replace "magento.test" with URL of your site
       #- "magento.test:172.17.0.1"
 
@@ -80,19 +80,6 @@ services:
     ports:
       - "1080:1080"
 
-  ## Blackfire support, uncomment to enable
-  #blackfire:
-  #  image: blackfire/blackfire:2
-  #  ports:
-  #    - "8307"
-  #  env_file: env/blackfire.env
-
-  ## Selenium support, uncomment to enable
-  #selenium:
-  #  image: selenium/standalone-chrome-debug:3.8.1
-  #  ports:
-  #    - "5900:5900"
-  #  extra_hosts: *appextrahosts
 
 volumes:
   appdata:
