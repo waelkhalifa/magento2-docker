@@ -14,7 +14,7 @@ source env/magento.env
 # shellcheck source=../env/rabbitmq.env
 source env/rabbitmq.env
 
-DOMAIN=${1:-magento.test}
+DOMAIN=${MAGENTO_BASE_URL}
 
 bin/stop
 
@@ -108,7 +108,7 @@ bin/clinotty bin/magento cron:install
 echo "Turning on developer mode..."
 bin/clinotty bin/magento deploy:mode:set developer
 
-cp -r .vscode src/
+#cp -r .idea src/
 
 echo "Docker development environment setup complete."
 echo "You may now access your Magento instance at https://${DOMAIN}/"
