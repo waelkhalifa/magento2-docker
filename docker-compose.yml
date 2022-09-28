@@ -26,8 +26,8 @@ services:
       - sockdata:/sock
       - ssldata:/etc/nginx/certs
       #extra_hosts: &appextrahosts
-      ## Selenium support, replace "magento.test" with URL of your site
-      #- "magento.test:172.17.0.1"
+      ## Selenium support
+      #- "${MAGENTO_BASE_URL}:172.17.0.1"
 
   phpfpm:
     image: markoshust/magento-php:8.1-fpm-1
@@ -36,11 +36,11 @@ services:
     #extra_hosts: *appextrahosts
 
   db:
-    image: mariadb:10.4
-    command:
-      --max_allowed_packet=64M
-      --optimizer_use_condition_selectivity=1
-      --optimizer_switch="rowid_filter=off"
+    image: mysql
+    # NOTE: use of "mysql_native_password" is not recommended: https://dev.mysql.com/doc/refman/8.0/en/upgrading-from-previous-series.html#upgrade-caching-sha2-password
+    # (this is just an example, not intended to be a production configuration)
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
     ports:
       - "3306:3306"
     env_file: env/db.env
