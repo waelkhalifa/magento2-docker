@@ -1,4 +1,4 @@
-## Magento2 Docker in 3 simple steps
+## Magento2 Docker in 3 simple steps (4 step is optional)
 
 Please run the following commands:
 
@@ -14,6 +14,9 @@ export MAGENTO_BASE_URL=magento2.test
 
 // Run docker composer up with other customizations like (adding to the domain hosts file)
 bin/setup
+
+// Run Custom Catalog via composer
+bin/composer require wael/custom-catalog
 
 ```
 
