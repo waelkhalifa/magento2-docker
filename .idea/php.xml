@@ -501,7 +501,6 @@
       <path value="$PROJECT_DIR$/src/vendor/pelago/emogrifier" />
       <path value="$PROJECT_DIR$/src/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/src/vendor/elasticsearch/elasticsearch" />
-      <path value="$PROJECT_DIR$/src/vendor/temando/module-shipping-remover" />
       <path value="$PROJECT_DIR$/src/vendor/magento/module-admin-adobe-ims" />
       <path value="$PROJECT_DIR$/src/vendor/magento/magento-coding-standard" />
       <path value="$PROJECT_DIR$/src/vendor/phar-io/version" />
@@ -550,6 +549,14 @@
       <path value="$PROJECT_DIR$/src/vendor/beberlei/assert" />
       <path value="$PROJECT_DIR$/src/vendor/league/flysystem" />
       <path value="$PROJECT_DIR$/src/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/src/vendor/wael/Wael" />
+      <path value="$PROJECT_DIR$/src/vendor/temando/module-shipping-remover" />
+      <path value="$PROJECT_DIR$/src/vendor/magefan/module-admin-user-guide" />
+      <path value="$PROJECT_DIR$/src/vendor/magefan/module-blog-graph-ql" />
+      <path value="$PROJECT_DIR$/src/vendor/magefan/module-blog" />
+      <path value="$PROJECT_DIR$/src/vendor/magefan/module-community" />
+      <path value="$PROJECT_DIR$/src/vendor/magefan/module-wysiwyg-advanced" />
+      <path value="$PROJECT_DIR$/src/vendor/wael/custom-catalog" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0">
